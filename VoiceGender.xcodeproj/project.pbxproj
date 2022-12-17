@@ -11,7 +11,6 @@
 		BE543391294E6A2900272219 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE543390294E6A2900272219 /* Assets.xcassets */; };
 		BE543394294E6A2900272219 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE543393294E6A2900272219 /* Preview Assets.xcassets */; };
 		BE54339C294E6AA400272219 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE54339A294E6AA400272219 /* ContentView.swift */; };
-		BE54339D294E6AA400272219 /* VoiceAnalysisApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE54339B294E6AA400272219 /* VoiceAnalysisApp.swift */; };
 		BE5433CC294E6AAF00272219 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE54339F294E6AAF00272219 /* Config.swift */; };
 		BE5433CD294E6AAF00272219 /* YINUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5433A1294E6AAF00272219 /* YINUtil.swift */; };
 		BE5433CE294E6AAF00272219 /* Buffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5433A2294E6AAF00272219 /* Buffer.swift */; };
@@ -54,7 +53,6 @@
 		BE543390294E6A2900272219 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE543393294E6A2900272219 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BE54339A294E6AA400272219 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		BE54339B294E6AA400272219 /* VoiceAnalysisApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceAnalysisApp.swift; sourceTree = "<group>"; };
 		BE54339F294E6AAF00272219 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		BE5433A1294E6AAF00272219 /* YINUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YINUtil.swift; sourceTree = "<group>"; };
 		BE5433A2294E6AAF00272219 /* Buffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Buffer.swift; sourceTree = "<group>"; };
@@ -124,7 +122,6 @@
 				BE54339E294E6AAF00272219 /* Bethowen */,
 				BE5433C1294E6AAF00272219 /* Pitchy */,
 				BE54339A294E6AA400272219 /* ContentView.swift */,
-				BE54339B294E6AA400272219 /* VoiceAnalysisApp.swift */,
 				BE54338C294E6A2800272219 /* VoiceGenderApp.swift */,
 				BE543390294E6A2900272219 /* Assets.xcassets */,
 				BE543392294E6A2900272219 /* Preview Content */,
@@ -339,7 +336,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE5433D2294E6AAF00272219 /* JainsEstimator.swift in Sources */,
-				BE54339D294E6AA400272219 /* VoiceAnalysisApp.swift in Sources */,
 				BE5433E3294E6AAF00272219 /* FFTTransformer.swift in Sources */,
 				BE5433CC294E6AAF00272219 /* Config.swift in Sources */,
 				BE5433D8294E6AAF00272219 /* LocationEstimator.swift in Sources */,
