@@ -8,17 +8,87 @@
 
 /* Begin PBXBuildFile section */
 		BE54338D294E6A2800272219 /* VoiceGenderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE54338C294E6A2800272219 /* VoiceGenderApp.swift */; };
-		BE54338F294E6A2800272219 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE54338E294E6A2800272219 /* ContentView.swift */; };
 		BE543391294E6A2900272219 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE543390294E6A2900272219 /* Assets.xcassets */; };
 		BE543394294E6A2900272219 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE543393294E6A2900272219 /* Preview Assets.xcassets */; };
+		BE54339C294E6AA400272219 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE54339A294E6AA400272219 /* ContentView.swift */; };
+		BE54339D294E6AA400272219 /* VoiceAnalysisApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE54339B294E6AA400272219 /* VoiceAnalysisApp.swift */; };
+		BE5433CC294E6AAF00272219 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE54339F294E6AAF00272219 /* Config.swift */; };
+		BE5433CD294E6AAF00272219 /* YINUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5433A1294E6AAF00272219 /* YINUtil.swift */; };
+		BE5433CE294E6AAF00272219 /* Buffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5433A2294E6AAF00272219 /* Buffer.swift */; };
+		BE5433CF294E6AAF00272219 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5433A4294E6AAF00272219 /* Array+Extensions.swift */; };
+		BE5433D0294E6AAF00272219 /* BarycentricEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5433A7294E6AAF00272219 /* BarycentricEstimator.swift */; };
+		BE5433D1294E6AAF00272219 /* MaxValueEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5433A8294E6AAF00272219 /* MaxValueEstimator.swift */; };
+		BE5433D2294E6AAF00272219 /* JainsEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5433A9294E6AAF00272219 /* JainsEstimator.swift */; };
+		BE5433D3294E6AAF00272219 /* QuinnsSecondEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5433AA294E6AAF00272219 /* QuinnsSecondEstimator.swift */; };
+		BE5433D4294E6AAF00272219 /* QuinnsFirstEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5433AB294E6AAF00272219 /* QuinnsFirstEstimator.swift */; };
+		BE5433D5294E6AAF00272219 /* HPSEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5433AC294E6AAF00272219 /* HPSEstimator.swift */; };
+		BE5433D6294E6AAF00272219 /* YINEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5433AD294E6AAF00272219 /* YINEstimator.swift */; };
+		BE5433D7294E6AAF00272219 /* QuadradicEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5433AE294E6AAF00272219 /* QuadradicEstimator.swift */; };
+		BE5433D8294E6AAF00272219 /* LocationEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5433AF294E6AAF00272219 /* LocationEstimator.swift */; };
+		BE5433D9294E6AAF00272219 /* EstimationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5433B0294E6AAF00272219 /* EstimationError.swift */; };
+		BE5433DA294E6AAF00272219 /* Estimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5433B1294E6AAF00272219 /* Estimator.swift */; };
+		BE5433DB294E6AAF00272219 /* EstimationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5433B2294E6AAF00272219 /* EstimationFactory.swift */; };
+		BE5433DC294E6AAF00272219 /* EstimationStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5433B3294E6AAF00272219 /* EstimationStrategy.swift */; };
+		BE5433DD294E6AAF00272219 /* SignalTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5433B5294E6AAF00272219 /* SignalTracker.swift */; };
+		BE5433DE294E6AAF00272219 /* SimulatorSignalTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5433B7294E6AAF00272219 /* SimulatorSignalTracker.swift */; };
+		BE5433DF294E6AAF00272219 /* OutputSignalTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5433B8294E6AAF00272219 /* OutputSignalTracker.swift */; };
+		BE5433E0294E6AAF00272219 /* InputSignalTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5433B9294E6AAF00272219 /* InputSignalTracker.swift */; };
+		BE5433E1294E6AAF00272219 /* Transformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5433BB294E6AAF00272219 /* Transformer.swift */; };
+		BE5433E2294E6AAF00272219 /* YINTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5433BD294E6AAF00272219 /* YINTransformer.swift */; };
+		BE5433E3294E6AAF00272219 /* FFTTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5433BE294E6AAF00272219 /* FFTTransformer.swift */; };
+		BE5433E4294E6AAF00272219 /* SimpleTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5433BF294E6AAF00272219 /* SimpleTransformer.swift */; };
+		BE5433E5294E6AAF00272219 /* PitchEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5433C0294E6AAF00272219 /* PitchEngine.swift */; };
+		BE5433E6294E6AAF00272219 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5433C2294E6AAF00272219 /* Error.swift */; };
+		BE5433E7294E6AAF00272219 /* WaveCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5433C4294E6AAF00272219 /* WaveCalculator.swift */; };
+		BE5433E8294E6AAF00272219 /* NoteCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5433C5294E6AAF00272219 /* NoteCalculator.swift */; };
+		BE5433E9294E6AAF00272219 /* PitchCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5433C6294E6AAF00272219 /* PitchCalculator.swift */; };
+		BE5433EA294E6AAF00272219 /* FrequencyValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5433C7294E6AAF00272219 /* FrequencyValidator.swift */; };
+		BE5433EB294E6AAF00272219 /* Pitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5433C9294E6AAF00272219 /* Pitch.swift */; };
+		BE5433EC294E6AAF00272219 /* AcousticWave.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5433CA294E6AAF00272219 /* AcousticWave.swift */; };
+		BE5433ED294E6AAF00272219 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5433CB294E6AAF00272219 /* Note.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BE543389294E6A2800272219 /* VoiceGender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoiceGender.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE54338C294E6A2800272219 /* VoiceGenderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceGenderApp.swift; sourceTree = "<group>"; };
-		BE54338E294E6A2800272219 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BE543390294E6A2900272219 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE543393294E6A2900272219 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BE54339A294E6AA400272219 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BE54339B294E6AA400272219 /* VoiceAnalysisApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceAnalysisApp.swift; sourceTree = "<group>"; };
+		BE54339F294E6AAF00272219 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		BE5433A1294E6AAF00272219 /* YINUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YINUtil.swift; sourceTree = "<group>"; };
+		BE5433A2294E6AAF00272219 /* Buffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Buffer.swift; sourceTree = "<group>"; };
+		BE5433A4294E6AAF00272219 /* Array+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
+		BE5433A7294E6AAF00272219 /* BarycentricEstimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarycentricEstimator.swift; sourceTree = "<group>"; };
+		BE5433A8294E6AAF00272219 /* MaxValueEstimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaxValueEstimator.swift; sourceTree = "<group>"; };
+		BE5433A9294E6AAF00272219 /* JainsEstimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JainsEstimator.swift; sourceTree = "<group>"; };
+		BE5433AA294E6AAF00272219 /* QuinnsSecondEstimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuinnsSecondEstimator.swift; sourceTree = "<group>"; };
+		BE5433AB294E6AAF00272219 /* QuinnsFirstEstimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuinnsFirstEstimator.swift; sourceTree = "<group>"; };
+		BE5433AC294E6AAF00272219 /* HPSEstimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HPSEstimator.swift; sourceTree = "<group>"; };
+		BE5433AD294E6AAF00272219 /* YINEstimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YINEstimator.swift; sourceTree = "<group>"; };
+		BE5433AE294E6AAF00272219 /* QuadradicEstimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuadradicEstimator.swift; sourceTree = "<group>"; };
+		BE5433AF294E6AAF00272219 /* LocationEstimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationEstimator.swift; sourceTree = "<group>"; };
+		BE5433B0294E6AAF00272219 /* EstimationError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EstimationError.swift; sourceTree = "<group>"; };
+		BE5433B1294E6AAF00272219 /* Estimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Estimator.swift; sourceTree = "<group>"; };
+		BE5433B2294E6AAF00272219 /* EstimationFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EstimationFactory.swift; sourceTree = "<group>"; };
+		BE5433B3294E6AAF00272219 /* EstimationStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EstimationStrategy.swift; sourceTree = "<group>"; };
+		BE5433B5294E6AAF00272219 /* SignalTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignalTracker.swift; sourceTree = "<group>"; };
+		BE5433B7294E6AAF00272219 /* SimulatorSignalTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimulatorSignalTracker.swift; sourceTree = "<group>"; };
+		BE5433B8294E6AAF00272219 /* OutputSignalTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutputSignalTracker.swift; sourceTree = "<group>"; };
+		BE5433B9294E6AAF00272219 /* InputSignalTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputSignalTracker.swift; sourceTree = "<group>"; };
+		BE5433BB294E6AAF00272219 /* Transformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transformer.swift; sourceTree = "<group>"; };
+		BE5433BD294E6AAF00272219 /* YINTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YINTransformer.swift; sourceTree = "<group>"; };
+		BE5433BE294E6AAF00272219 /* FFTTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FFTTransformer.swift; sourceTree = "<group>"; };
+		BE5433BF294E6AAF00272219 /* SimpleTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleTransformer.swift; sourceTree = "<group>"; };
+		BE5433C0294E6AAF00272219 /* PitchEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PitchEngine.swift; sourceTree = "<group>"; };
+		BE5433C2294E6AAF00272219 /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		BE5433C4294E6AAF00272219 /* WaveCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaveCalculator.swift; sourceTree = "<group>"; };
+		BE5433C5294E6AAF00272219 /* NoteCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteCalculator.swift; sourceTree = "<group>"; };
+		BE5433C6294E6AAF00272219 /* PitchCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PitchCalculator.swift; sourceTree = "<group>"; };
+		BE5433C7294E6AAF00272219 /* FrequencyValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrequencyValidator.swift; sourceTree = "<group>"; };
+		BE5433C9294E6AAF00272219 /* Pitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pitch.swift; sourceTree = "<group>"; };
+		BE5433CA294E6AAF00272219 /* AcousticWave.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcousticWave.swift; sourceTree = "<group>"; };
+		BE5433CB294E6AAF00272219 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +121,11 @@
 		BE54338B294E6A2800272219 /* VoiceGender */ = {
 			isa = PBXGroup;
 			children = (
+				BE54339E294E6AAF00272219 /* Bethowen */,
+				BE5433C1294E6AAF00272219 /* Pitchy */,
+				BE54339A294E6AA400272219 /* ContentView.swift */,
+				BE54339B294E6AA400272219 /* VoiceAnalysisApp.swift */,
 				BE54338C294E6A2800272219 /* VoiceGenderApp.swift */,
-				BE54338E294E6A2800272219 /* ContentView.swift */,
 				BE543390294E6A2900272219 /* Assets.xcassets */,
 				BE543392294E6A2900272219 /* Preview Content */,
 			);
@@ -65,6 +138,134 @@
 				BE543393294E6A2900272219 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BE54339E294E6AAF00272219 /* Bethowen */ = {
+			isa = PBXGroup;
+			children = (
+				BE54339F294E6AAF00272219 /* Config.swift */,
+				BE5433A0294E6AAF00272219 /* Library */,
+				BE5433A5294E6AAF00272219 /* Estimation */,
+				BE5433B4294E6AAF00272219 /* SignalTracking */,
+				BE5433BA294E6AAF00272219 /* Transform */,
+				BE5433C0294E6AAF00272219 /* PitchEngine.swift */,
+			);
+			path = Bethowen;
+			sourceTree = "<group>";
+		};
+		BE5433A0294E6AAF00272219 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				BE5433A1294E6AAF00272219 /* YINUtil.swift */,
+				BE5433A2294E6AAF00272219 /* Buffer.swift */,
+				BE5433A3294E6AAF00272219 /* Extensions */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		BE5433A3294E6AAF00272219 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BE5433A4294E6AAF00272219 /* Array+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BE5433A5294E6AAF00272219 /* Estimation */ = {
+			isa = PBXGroup;
+			children = (
+				BE5433A6294E6AAF00272219 /* Strategies */,
+				BE5433AF294E6AAF00272219 /* LocationEstimator.swift */,
+				BE5433B0294E6AAF00272219 /* EstimationError.swift */,
+				BE5433B1294E6AAF00272219 /* Estimator.swift */,
+				BE5433B2294E6AAF00272219 /* EstimationFactory.swift */,
+				BE5433B3294E6AAF00272219 /* EstimationStrategy.swift */,
+			);
+			path = Estimation;
+			sourceTree = "<group>";
+		};
+		BE5433A6294E6AAF00272219 /* Strategies */ = {
+			isa = PBXGroup;
+			children = (
+				BE5433A7294E6AAF00272219 /* BarycentricEstimator.swift */,
+				BE5433A8294E6AAF00272219 /* MaxValueEstimator.swift */,
+				BE5433A9294E6AAF00272219 /* JainsEstimator.swift */,
+				BE5433AA294E6AAF00272219 /* QuinnsSecondEstimator.swift */,
+				BE5433AB294E6AAF00272219 /* QuinnsFirstEstimator.swift */,
+				BE5433AC294E6AAF00272219 /* HPSEstimator.swift */,
+				BE5433AD294E6AAF00272219 /* YINEstimator.swift */,
+				BE5433AE294E6AAF00272219 /* QuadradicEstimator.swift */,
+			);
+			path = Strategies;
+			sourceTree = "<group>";
+		};
+		BE5433B4294E6AAF00272219 /* SignalTracking */ = {
+			isa = PBXGroup;
+			children = (
+				BE5433B5294E6AAF00272219 /* SignalTracker.swift */,
+				BE5433B6294E6AAF00272219 /* Units */,
+			);
+			path = SignalTracking;
+			sourceTree = "<group>";
+		};
+		BE5433B6294E6AAF00272219 /* Units */ = {
+			isa = PBXGroup;
+			children = (
+				BE5433B7294E6AAF00272219 /* SimulatorSignalTracker.swift */,
+				BE5433B8294E6AAF00272219 /* OutputSignalTracker.swift */,
+				BE5433B9294E6AAF00272219 /* InputSignalTracker.swift */,
+			);
+			path = Units;
+			sourceTree = "<group>";
+		};
+		BE5433BA294E6AAF00272219 /* Transform */ = {
+			isa = PBXGroup;
+			children = (
+				BE5433BB294E6AAF00272219 /* Transformer.swift */,
+				BE5433BC294E6AAF00272219 /* Strategies */,
+			);
+			path = Transform;
+			sourceTree = "<group>";
+		};
+		BE5433BC294E6AAF00272219 /* Strategies */ = {
+			isa = PBXGroup;
+			children = (
+				BE5433BD294E6AAF00272219 /* YINTransformer.swift */,
+				BE5433BE294E6AAF00272219 /* FFTTransformer.swift */,
+				BE5433BF294E6AAF00272219 /* SimpleTransformer.swift */,
+			);
+			path = Strategies;
+			sourceTree = "<group>";
+		};
+		BE5433C1294E6AAF00272219 /* Pitchy */ = {
+			isa = PBXGroup;
+			children = (
+				BE5433C2294E6AAF00272219 /* Error.swift */,
+				BE5433C3294E6AAF00272219 /* Calculators */,
+				BE5433C7294E6AAF00272219 /* FrequencyValidator.swift */,
+				BE5433C8294E6AAF00272219 /* Data */,
+			);
+			path = Pitchy;
+			sourceTree = "<group>";
+		};
+		BE5433C3294E6AAF00272219 /* Calculators */ = {
+			isa = PBXGroup;
+			children = (
+				BE5433C4294E6AAF00272219 /* WaveCalculator.swift */,
+				BE5433C5294E6AAF00272219 /* NoteCalculator.swift */,
+				BE5433C6294E6AAF00272219 /* PitchCalculator.swift */,
+			);
+			path = Calculators;
+			sourceTree = "<group>";
+		};
+		BE5433C8294E6AAF00272219 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				BE5433C9294E6AAF00272219 /* Pitch.swift */,
+				BE5433CA294E6AAF00272219 /* AcousticWave.swift */,
+				BE5433CB294E6AAF00272219 /* Note.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +338,43 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE54338F294E6A2800272219 /* ContentView.swift in Sources */,
+				BE5433D2294E6AAF00272219 /* JainsEstimator.swift in Sources */,
+				BE54339D294E6AA400272219 /* VoiceAnalysisApp.swift in Sources */,
+				BE5433E3294E6AAF00272219 /* FFTTransformer.swift in Sources */,
+				BE5433CC294E6AAF00272219 /* Config.swift in Sources */,
+				BE5433D8294E6AAF00272219 /* LocationEstimator.swift in Sources */,
+				BE54339C294E6AA400272219 /* ContentView.swift in Sources */,
+				BE5433D3294E6AAF00272219 /* QuinnsSecondEstimator.swift in Sources */,
+				BE5433E5294E6AAF00272219 /* PitchEngine.swift in Sources */,
+				BE5433DB294E6AAF00272219 /* EstimationFactory.swift in Sources */,
+				BE5433D1294E6AAF00272219 /* MaxValueEstimator.swift in Sources */,
+				BE5433D5294E6AAF00272219 /* HPSEstimator.swift in Sources */,
+				BE5433D0294E6AAF00272219 /* BarycentricEstimator.swift in Sources */,
+				BE5433D4294E6AAF00272219 /* QuinnsFirstEstimator.swift in Sources */,
+				BE5433DF294E6AAF00272219 /* OutputSignalTracker.swift in Sources */,
+				BE5433DE294E6AAF00272219 /* SimulatorSignalTracker.swift in Sources */,
+				BE5433EC294E6AAF00272219 /* AcousticWave.swift in Sources */,
+				BE5433E8294E6AAF00272219 /* NoteCalculator.swift in Sources */,
+				BE5433CF294E6AAF00272219 /* Array+Extensions.swift in Sources */,
+				BE5433E4294E6AAF00272219 /* SimpleTransformer.swift in Sources */,
 				BE54338D294E6A2800272219 /* VoiceGenderApp.swift in Sources */,
+				BE5433DA294E6AAF00272219 /* Estimator.swift in Sources */,
+				BE5433D7294E6AAF00272219 /* QuadradicEstimator.swift in Sources */,
+				BE5433DC294E6AAF00272219 /* EstimationStrategy.swift in Sources */,
+				BE5433E2294E6AAF00272219 /* YINTransformer.swift in Sources */,
+				BE5433E1294E6AAF00272219 /* Transformer.swift in Sources */,
+				BE5433E7294E6AAF00272219 /* WaveCalculator.swift in Sources */,
+				BE5433EA294E6AAF00272219 /* FrequencyValidator.swift in Sources */,
+				BE5433D9294E6AAF00272219 /* EstimationError.swift in Sources */,
+				BE5433CD294E6AAF00272219 /* YINUtil.swift in Sources */,
+				BE5433CE294E6AAF00272219 /* Buffer.swift in Sources */,
+				BE5433EB294E6AAF00272219 /* Pitch.swift in Sources */,
+				BE5433E0294E6AAF00272219 /* InputSignalTracker.swift in Sources */,
+				BE5433DD294E6AAF00272219 /* SignalTracker.swift in Sources */,
+				BE5433E6294E6AAF00272219 /* Error.swift in Sources */,
+				BE5433E9294E6AAF00272219 /* PitchCalculator.swift in Sources */,
+				BE5433ED294E6AAF00272219 /* Note.swift in Sources */,
+				BE5433D6294E6AAF00272219 /* YINEstimator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +506,7 @@
 				DEVELOPMENT_TEAM = MHT8X3GHR9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Needs mic";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +536,7 @@
 				DEVELOPMENT_TEAM = MHT8X3GHR9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Needs mic";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
